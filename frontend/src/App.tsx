@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import type {
   TestMode,
   TestDuration,
@@ -359,6 +360,7 @@ export function App() {
         setShowCockpit={setShowCockpit}
         onTestSound={testSound}
       />
+      <Analytics />
     </div>
   );
 }
