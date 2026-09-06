@@ -1,0 +1,38 @@
+[
+  {
+    "id": "py-binary-search",
+    "language": "python",
+    "title": "Binary Search",
+    "code": "def binary_search(arr, target):\n    low, high = 0, len(arr) - 1\n    while low <= high:\n        mid = (low + high) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            low = mid + 1\n        else:\n            high = mid - 1\n    return -1"
+  },
+  {
+    "id": "py-fibonacci",
+    "language": "python",
+    "title": "Fibonacci Generator",
+    "code": "def fibonacci(n: int):\n    a, b = 0, 1\n    for _ in range(n):\n        yield a\n        a, b = b, a + b"
+  },
+  {
+    "id": "py-fastapi-route",
+    "language": "python",
+    "title": "FastAPI Endpoint",
+    "code": "@app.get('/api/users/{user_id}', response_model=UserRead)\nasync def get_user(user_id: int, db: Session = Depends(get_session)):\n    user = db.get(User, user_id)\n    if not user:\n        raise HTTPException(status_code=404, detail='User not found')\n    return user"
+  },
+  {
+    "id": "js-fetch-async",
+    "language": "javascript",
+    "title": "Async Fetch Handler",
+    "code": "async function fetchUserStats(userId) {\n  try {\n    const response = await fetch(`/api/stats/${userId}`);\n    if (!response.ok) throw new Error('Network error');\n    const data = await response.json();\n    return data.wpm;\n  } catch (err) {\n    console.error(err);\n    return null;\n  }\n}"
+  },
+  {
+    "id": "js-debounce",
+    "language": "javascript",
+    "title": "Debounce Utility",
+    "code": "function debounce(fn, delay = 300) {\n  let timer;\n  return (...args) => {\n    clearTimeout(timer);\n    timer = setTimeout(() => fn.apply(this, args), delay);\n  };\n}"
+  },
+  {
+    "id": "sql-top-users",
+    "language": "sql",
+    "title": "Top Typing Speeds Query",
+    "code": "SELECT u.username, MAX(t.wpm) AS top_wpm, AVG(t.accuracy) AS avg_acc\nFROM users u\nJOIN test_results t ON u.id = t.user_id\nWHERE t.mode = 'time 60'\nGROUP BY u.id, u.username\nORDER BY top_wpm DESC\nLIMIT 10;"
+  }
+]
