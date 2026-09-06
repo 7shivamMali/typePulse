@@ -1,127 +1,168 @@
-# ⚡ TypePulse — Minimalist Speed Typing Platform
+# ⚡ TypePulse — Developer Speed Cockpit & Telemetry Deck
 
-A modern, high-performance, developer-focused typing speed application built with **FastAPI (Python 3.12)**, **React 19**, **TypeScript**, and **Tailwind CSS**.
+<div align="center">
 
-Inspired by Monkeytype with unique superpowers: **Developer Code Mode**, **AI-Powered Weakness Drills**, **Synthesized Mechanical Switch Audio**, and **Anti-Cheat Validation**.
+![TypePulse Hero Banner](preview.png)
 
----
+### *The High-Performance, Cyber-Aesthetic Typing Arena for Developers & Speed Typists*
 
-## ✨ Features
+[![Vibe Coded](https://img.shields.io/badge/Vibe%20Coded-100%25-ff2a85?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://github.com)
+[![Built with Google Antigravity](https://img.shields.io/badge/Built%20With-Google%20Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google)
+[![AI Engine](https://img.shields.io/badge/AI%20Model-Gemini%203.8%20Flash-00f2fe?style=for-the-badge&logo=google-gemini&logoColor=white)](https://deepmind.google)
+[![FastAPI](https://img.shields.io/badge/Backend-FastAPI%20(Python%203.12)-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+[![React 19](https://img.shields.io/badge/Frontend-React%2019%20%2B%20TypeScript-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
 
-- **⚡ Zero-Latency Typing Engine:** Sub-millisecond keystroke capture using `performance.now()`, smooth 3-line sliding viewport, and interpolated CSS caret.
-- **🔊 Web Audio API Mechanical Sound Engine:** Synthesizes realistic switch profiles without external audio files:
-  - *Clicky* (Cherry MX Blue)
-  - *Linear* (Cherry MX Red)
-  - *Thocky* (Topre / Holy Panda)
-  - *Silent / Off*
-- **💻 Developer Code Mode:** Practice typing realistic syntax-aware code snippets in **Python**, **JavaScript**, and **SQL**.
-- **🎯 Smart Weakness Drills:** Analyzes your most frequently missed keys and bigrams (e.g. `th`, `ou`, `pr`) and dynamically generates targeted training texts.
-- **🎨 5 Curated Visual Themes:**
-  - *Carbon / Slate* (Default minimal dark)
-  - *Monkeytype Classic* (Matte charcoal & yellow)
-  - *Cyberpunk Neon* (Midnight purple & cyan)
-  - *Nord Glacier* (Frosty Arctic slate)
-  - *Sepia* (Warm parchment)
-- **📈 Deep Analytics & Visualizations:** Second-by-second WPM and error progression chart powered by Recharts, raw WPM, accuracy, consistency %, and confetti PB celebrations.
-- **🛡️ Python Anti-Cheat Engine:** Validates keystroke interval distributions and flags automated bot patterns or clipboard pasting.
-- **🏆 Global Leaderboards & Cloud Sync:** Compete on mode-specific leaderboards with JWT-authenticated profiles (or play 100% offline as a guest).
+</div>
 
 ---
 
-## 🛠️ Tech Stack
-
-| Component | Technology |
-|---|---|
-| **Frontend** | React 19, TypeScript, Vite, Tailwind CSS, Recharts, Lucide Icons |
-| **Backend** | Python 3.12, FastAPI, Uvicorn, Pydantic v2 |
-| **ORM & Database** | SQLModel (SQLAlchemy) with SQLite (local) / PostgreSQL (production) |
-| **Auth & Security** | JWT (PyJWT), Argon2 password hashing (pwdlib) |
-| **Audio** | Native Web Audio API (OscillatorNode, BiquadFilterNode) |
-| **Containers** | Multi-stage Docker & Docker Compose |
+> [!NOTE]
+> **🚀 Vibe Coded with Google Antigravity (Gemini 3.8 Flash)**  
+> **TypePulse** was vibe coded from scratch into a full-stack production platform using **Google Antigravity** powered by the **Gemini 3.8 Flash** advanced agentic model. From sub-millisecond driftless timer calculus and Web Audio API acoustic switch synthesis to the custom IDE DevDeck telemetry bar and 15 custom color themes, the entire platform was crafted with deep autonomy, real-time feedback loops, and precision agentic engineering.
 
 ---
 
-## 🚀 Quick Start (Local Development)
+## 🌟 What is TypePulse?
+
+**TypePulse** re-imagines the classic speed typing benchmark into an **IDE-inspired studio deck**. Instead of clichéd flat cards, TypePulse provides a high-octane developer arena equipped with:
+
+* 🏎️ **Cockpit Telemetry Bar**: Live tachometer speedometer gauge, real-time typing cadence spectrum equalizer, and circular accuracy ring.
+* ⌨️ **60% Mechanical Keystroke Radar**: Interactive virtual keyboard that lights up keycaps and heatmaps your physical keystrokes in real time.
+* 🔊 **Native Web Audio Synthesizer**: 8 distinct mechanical switch acoustics synthesized via Web Audio API (zero audio file downloads, zero latency).
+* 🐍 **Developer Code Mode**: Benchmark your speed on real, syntax-aware **Python**, **JavaScript**, and **SQL** code snippets with indentation and symbol handling.
+* 🧠 **AI-Powered Weakness Drills**: Python NLP engine that extracts your error bigrams (e.g. `th`, `pr`, `ion`) and dynamically generates customized training sentences to fix muscle-memory bottlenecks.
+* 🎨 **15 Curated Color Themes**: From cyberpunk neon and hacker terminals to soothing matcha tea and Japanese cherry blossom light modes.
+* ⏱️ **Driftless Precision Engine**: Sub-millisecond timing powered by `performance.now()` delta math with locked typographic non-breaking space baselines.
+
+---
+
+## 🎨 15 Custom Studio Themes
+
+TypePulse features an extensive theme engine, switchable on-the-fly and persistent across browser reloads:
+
+### Dark & Cyber Themes
+* 🟦 **Cyber Carbon** *(Default)*: Futuristic terminal navy with electric cyan glow
+* 🟩 **Matrix Terminal**: Phosphor green monochrome on deep void black
+* 🟧 **Amber CRT**: Nostalgic 1980s computer terminal glow
+* 🟪 **Synthwave 84**: Outrun neon magenta and deep indigo
+* ❄️ **Nordic Frost**: Arctic slate and glacial blue
+* ⚡ **Cyberpunk 2077**: High-voltage neon yellow, onyx, and electric cyan
+* 🧛 **Dracula Vampire**: Gothic charcoal, pastel violet, and neon pink
+* 🍃 **Monokai Pro**: Classic code editor dark olive, lime, and orange
+* 🌌 **Tokyo Night**: Midnight anime cobalt and soft lavender
+* 📜 **Warm Sepia**: Vintage typewriter parchment and aged walnut
+
+### Clean Light Themes
+* 📄 **Paper Light**: Crisp daylight slate, deep ocean ink, and emerald accents
+* ☀️ **Solarized Light**: Ivory paper, golden amber, and deep teal navy
+* 🌸 **Sakura Blossom**: Soft blush pink with Japanese cherry blossom accents
+* 🏔️ **Nord Snow**: Pure arctic snow, polar slate, and glacier ice
+* 🍵 **Matcha Tea**: Botanical Japanese tea leaf ivory with forest moss green
+
+---
+
+## 🔊 8 Mechanical Switch Sound Profiles
+
+Experience realistic mechanical keyboard acoustics synthesized in real-time via Web Audio API:
+
+1. **Crisp Clicky (Blue Switch)**: Sharp click-leaf snap with solid bottom-out impact.
+2. **Smooth Linear (Red Switch)**: Soft, dampened bottom-out with minimal acoustic resistance.
+3. **Deep Thock (Holy Panda)**: Resonant low-frequency acoustic thock with deep switch body sound.
+4. **Lubed Creamy (Custom Lubed)**: Velvety, buttery double-tap with low-pass acoustic warmth.
+5. **Metal Typewriter (Mechanical Strike)**: High-frequency metallic steel strike with solid carriage platen impact.
+6. **Water Bubble (Bubble Pop)**: Cheerful buoyant water droplet pop and chirp.
+7. **8-Bit Beep (Arcade Blip)**: Retro CRT terminal square wave frequency pulses.
+8. **Mute / Silent**: Zero audio for pure distraction-free focus.
+
+> **Instant Audio Testing**: Each sound profile in the **Settings** modal features a **`▶ Test`** button to preview switch acoustics instantly!
+
+---
+
+## 🛠️ Full Tech Stack
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                          Frontend (Client)                             │
+│  • Vite + React 19 (TypeScript) + Tailwind CSS                         │
+│  • Driftless Engine: performance.now() delta millisecond calculus      │
+│  • Smooth 3-line sliding viewport with dynamic line numbers (01, 02)   │
+│  • Web Audio API Synthesizer: 8 organic acoustic profiles              │
+│  • Recharts Analytics: WPM, Raw WPM, Errors & Consistency over time    │
+│  • 60% Virtual Keystroke Radar with active key glow                    │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │
+                            REST API (JSON)
+                                    │
+┌───────────────────────────────────▼────────────────────────────────────┐
+│                          Backend (FastAPI)                             │
+│  • Python 3.12 + FastAPI (Async & OpenAPI)                             │
+│  • NLP Weakness Analyzer: Bigram/Trigram mistake pattern extraction    │
+│  • Anti-Cheat Engine: Timestamp variance & burst detection (<25ms)    │
+│  • Code Snippet Engine: Curated Python, JS, and SQL snippets           │
+│  • SQLModel ORM: SQLite (local) / PostgreSQL (production ready)        │
+│  • JWT Authentication & Argon2 password hashing                        │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🚀 Quick Start (Run Locally)
 
 ### 1. Prerequisites
-- Python 3.12+
-- Node.js 18+ and npm
+* **Python 3.12+**
+* **Node.js 18+** and **npm**
 
-### 2. Backend Setup
+### 2. Start Backend (FastAPI)
 ```bash
-# In project root
+# In the project root
 cd backend
 
-# Create virtual environment
+# Create & activate virtual environment
 python -m venv .venv
-
-# Activate virtual environment
 # On Windows:
 .venv\Scripts\activate
-# On Linux/macOS:
+# On macOS/Linux:
 source .venv/bin/activate
 
-# Install dependencies
+# Install dependencies & run server
 pip install -r requirements.txt
-
-# Start FastAPI server
 uvicorn app.main:app --reload --port 8000
 ```
-FastAPI interactive Swagger documentation will be available at: **http://127.0.0.1:8000/docs**
+Interactive Swagger API docs will be live at: **http://127.0.0.1:8000/docs**
 
-### 3. Frontend Setup
+### 3. Start Frontend (React 19 + Vite)
 ```bash
 # In a separate terminal
 cd frontend
-
-# Install dependencies
 npm install
-
-# Start Vite dev server
 npm run dev
 ```
 Open **http://localhost:5173** in your browser to start typing!
 
 ---
 
-## 🐳 Docker Deployment (One Command)
+## ☁️ 100% Free Production Deployment
 
-To build and run the entire full-stack application inside Docker:
+TypePulse is optimized for the **Free Cloud Split (Vercel + Render)**:
 
-```bash
-docker compose up --build
-```
-- Web Application: **http://localhost**
-- API & Docs: **http://localhost:8000/docs**
+* **Frontend**: Global CDN on **[Vercel](https://vercel.com)** (zero config, client-side routing handled via `vercel.json`).
+* **Backend**: Free Python 3.12 Web Service on **[Render](https://render.com)** (auto-configured via `render.yaml`).
 
----
-
-## ☁️ Production Cloud Deployment
-
-### Frontend (Vercel / Cloudflare Pages)
-1. Set the root directory to `frontend`.
-2. Framework Preset: `Vite`.
-3. Build Command: `npm run build`.
-4. Output Directory: `dist`.
-5. Add an environment variable `VITE_API_URL` pointing to your deployed backend URL.
-
-### Backend (Render / Railway / Fly.io)
-1. Deploy from the `backend/` directory using the provided `backend/Dockerfile`.
-2. Set environment variables:
-   - `DATABASE_URL`: Your PostgreSQL connection string (from Supabase, Neon, or Railway).
-   - `SECRET_KEY`: A secure random secret string for JWT tokens.
+For a detailed 3-minute walkthrough, see [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md).
 
 ---
 
-## ⌨️ Keyboard Shortcuts
+## ⌨️ Pro Keyboard Shortcuts
 
 | Shortcut | Action |
-|---|---|
-| `Tab` or `Tab + Enter` | Instantly restart test with a new word bank |
+| :--- | :--- |
+| `Tab` or `Tab + Enter` | Instantly restart session with a fresh buffer |
 | `Ctrl + Backspace` | Delete entire current word input |
-| `Caps Lock` | Automatic onscreen warning badge |
+| `Esc` | Open / Close Studio Settings dialog |
+| `Caps Lock` | Instant real-time warning badge |
 
 ---
 
 ## 📄 License
-MIT License. Created with ❤️ for developers and speed typists.
+MIT License. Crafted with ❤️ and vibe-coded with **Google Antigravity (Gemini 3.8 Flash)**.
